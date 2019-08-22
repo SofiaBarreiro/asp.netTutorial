@@ -16,42 +16,27 @@
 
     <h1>Hola mundo</h1>
 
-    <table>
-
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-
-    </table>
 
 
         <div>
-                <p>Nombre y apellido<asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+                <p>Nombre y apellido<asp:TextBox Class="TextBox" ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged" ToolTip="aca va tu nombre y apellido" Columns="30"></asp:TextBox>
             </p>
-                <p>Telefono<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                <p>Telefono<asp:TextBox ID="TextBox2" Class="TextBox" runat="server" MaxLength="8"></asp:TextBox>
             </p>
-            <p>Direccion<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+            <p>Direccion<asp:TextBox ID="TextBox3" Class="TextBox" runat="server"></asp:TextBox>
             </p>
-
-                <asp:Button ID="Button1" runat="server" Text="Enviar" ValidateRequestMode="Disabled" ValidationGroup="TextBox1_TextChanged()" />
+            <p>Provincia<asp:TextBox ID="TextBox5" Class="TextBox" runat="server" TextMode="MultiLine"></asp:TextBox>
+            </p>
+            <p>Email<asp:TextBox ID="TextBox4" Class="TextBox" runat="server"></asp:TextBox>
+            </p>
+                 <asp:Button ID="Button1" runat="server" Text="Button" />
+                <asp:RequiredFieldValidator ID="RvValidator" runat="server" ControlToValidate="TextBox1" ErrorMessage="Debe completar nombre y apellido"></asp:RequiredFieldValidator>
                 <br />
 
         </div>
 
     </form>
-        <img src="./imagenes/20170127_213905.jpg">
-
-
-    </center>
+        &nbsp;</center>
    
 </body>
 </html>

@@ -10,15 +10,17 @@ tr, td {
 
 }
 
-table {
 
-    border-collapse: collapse;
+form {
 
+    text-align: left;
+    margin-left: 30%;
 }
 
-img {
+.TextBox {
 
-    width:50%;
-    height:437px;
+    background-color: aqua;
+
+
 }
 

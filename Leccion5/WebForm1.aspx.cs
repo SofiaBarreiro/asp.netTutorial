@@ -11,7 +11,7 @@ namespace Leccion5
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //TextBox1.Focus();
         }
 
         protected void TextBox1_TextChanged(object sender, EventArgs e)
