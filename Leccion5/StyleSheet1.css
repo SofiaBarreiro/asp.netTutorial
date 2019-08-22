@@ -1,0 +1,24 @@
+﻿body {
+
+    background-color: coral;
+}
+
+tr, td {
+
+    border-collapse: collapse;
+
+
+}
+
+table {
+
+    border-collapse: collapse;
+
+}
+
+img {
+
+    width:50%;
+    height:437px;
+}
+
