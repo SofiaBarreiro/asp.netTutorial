@@ -42,7 +42,74 @@
             <br />
             <asp:Button ID="btnCalcular" runat="server" Text="Calcular" OnClick="btnCalcular_Click" />
         </div>
+           <div>
+
+
+               <asp:HyperLink ID="link1" runat="server" NavigateUrl="http://www.google.com.ar/">Ir a Google</asp:HyperLink>
+               <br />
+               <asp:HyperLink ID="link2" runat="server" NavigateUrl="~/Formulario2.aspx">ir a Formulario2</asp:HyperLink>
+               <br />
+               <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Formulario2.aspx" Target="_blank">ir a Formulario2 en otra pestaña</asp:HyperLink>
+               <br />
+               <br />
+               <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Formulario2.aspx">ir a Formulario2</asp:LinkButton>
+
+
+               <br />
+               <asp:LinkButton ID="LinkButton2" runat="server" OnClientClick="return Funcion();">Ir a script</asp:LinkButton>
+
+
+           </div>
+            <div>
+
+
+
+                <asp:ImageButton ID="imgBtn1" runat="server" Height="130px" ImageUrl="~/imagenes/20170127_213905.jpg" OnClick="imgBtn1_Click" Width="128px" />
+
+
+
+                <br />
+
+
+
+            </div>
+        <div>
+            <center>
+                 <br />
+            <asp:Label ID="Label1" runat="server" Text="A"></asp:Label>
+            <asp:TextBox ID="TextBox1" runat="server">0</asp:TextBox>
+            <br />
+            <br />
+            <asp:Label ID="Label2" runat="server" Text="B"></asp:Label>
+            <asp:TextBox ID="TextBox2" runat="server">0</asp:TextBox>
+                 <br />
+            <br />
+                 <asp:Label ID="Resultado" runat="server" Text="Label"></asp:Label>
+                 <br />
+            <br />
+            <asp:Button ID="btnSuma" runat="server" style="margin-bottom: 0px" Text="Suma" CommandName="Suma" OnClick="btnSuma_Click" OnCommand="operaciones" />
+            <asp:Button ID="btnResta" runat="server" style="margin-bottom: 0px" Text="Resta" CommandName="Resta" OnCommand="operaciones" />
+            <asp:Button ID="btnMulti" runat="server" style="margin-bottom: 0px" Text="Multi" CommandName="Multi" OnCommand="operaciones" />
+            <asp:Button ID="btnDiv" runat="server" style="margin-bottom: 0px" Text="Div" CommandName="Div" OnCommand="operaciones" />
+            <br />
+
+            </center>
+
            
+
+        </div>
+
+        <script type="text/javascript">
+
+            function Funcion() {
+
+                alert('Esto es javascript');
+                return true;
+
+            }
+        </script>
     </form>
+
+
 </body>
 </html>

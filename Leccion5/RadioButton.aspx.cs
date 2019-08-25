@@ -93,5 +93,49 @@ namespace Leccion5
             lblTotal.Text = "$" + cantidad.ToString();
         }
 
+        protected void imgBtn1_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Write("boton de imagen");
+        }
+
+        protected void operaciones(object sender, CommandEventArgs e)
+        {
+            double a = Convert.ToDouble(TextBox1.Text);
+            double b = Convert.ToDouble(TextBox2.Text);
+            double resultado = 0;
+
+            if(e.CommandName== "Suma")
+            {
+
+                resultado = a + b;
+
+            }
+            if (e.CommandName == "Resta")
+            {
+
+                resultado = a - b;
+
+            }
+            if (e.CommandName == "Div")
+            {
+
+                resultado = a / b;
+
+            }
+            if (e.CommandName == "Multi")
+            {
+
+                resultado = a * b;
+
+            }
+
+            Resultado.Text = resultado.ToString();
+
+        }
+
+        protected void btnSuma_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
